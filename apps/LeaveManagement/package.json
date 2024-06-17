@@ -1,5 +1,5 @@
 {
-  "name": "@client-management/server",
+  "name": "@leave-management/server",
   "private": true,
   "scripts": {
     "start": "nest start",
@@ -16,8 +16,7 @@
     "docker:dev": "docker-compose -f docker-compose.dev.yml up -d",
     "package:container": "docker build .",
     "compose:up": "docker-compose up -d",
-    "compose:down": "docker-compose down --volumes",
-    "preinstall": "node dist/setup.js"
+    "compose:down": "docker-compose down --volumes"
   },
   "dependencies": {
     "@apollo/server": "^4.9.4",
