@@ -2,10 +2,10 @@
   "name": "@employee-management/server",
   "private": true,
   "scripts": {
-    "start": "nest start",
-    "start:watch": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
-    "build": "nest build",
+    "start": "node init && nest start",
+    "start:watch": "node init && nest start --watch",
+    "start:debug": "node init && nest start --debug --watch",
+    "build": "node init && nest build",
     "test": "jest",
     "seed": "ts-node scripts/seed.ts",
     "db:migrate-save": "prisma migrate dev",
@@ -68,6 +68,8 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "modulePathIgnorePatterns": ["<rootDir>/dist/"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/"
+    ]
   }
 }
